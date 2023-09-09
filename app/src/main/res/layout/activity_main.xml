@@ -4,15 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/app_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_tab_title_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/tab_title_car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_tab_title_favorite"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_tab_title_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/tab_title_favorite"
+        app:layout_constraintStart_toEndOf="@id/tv_tab_title_cars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <ImageView
+        android:id="@+id/iv_car_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tab_title_cars"
+        android:contentDescription="@string/app_title" />
+
+    <TextView
+        android:id="@+id/tv_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/price_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_car_image"/>
+
+    <TextView
+        android:id="@+id/tv_price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        tools:text="R$ 120.000,00"
+        app:layout_constraintStart_toEndOf="@id/tv_price_label"
+        app:layout_constraintTop_toBottomOf="@id/iv_car_image"/>
+
+    <TextView
+        android:id="@+id/tv_battery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/battery_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_label"/>
+
+    <TextView
+        android:id="@+id/tv_battery_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        tools:text="39,4 Kwh"
+        app:layout_constraintStart_toEndOf="@id/tv_battery_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_value"/>
+
+    <TextView
+        android:id="@+id/tv_potency_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/potency_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_battery_label"/>
+
+    <TextView
+        android:id="@+id/tv_potency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        tools:text="646 cv"
+        app:layout_constraintStart_toEndOf="@id/tv_potency_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_battery_value"/>
+
+    <TextView
+        android:id="@+id/tv_recharge_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:text="@string/recharge_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_potency_label"/>
+
+    <TextView
+        android:id="@+id/tv_recharge_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        tools:text="23 min"
+        app:layout_constraintStart_toEndOf="@id/tv_recharge_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_potency_value"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

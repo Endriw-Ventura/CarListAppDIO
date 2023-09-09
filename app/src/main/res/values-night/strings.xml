@@ -1,8 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CarList</string>
-    <string name="app_title">Carro Elétrico</string>
-    <string name="tab_title_car">Carros</string>
-    <string name="tab_title_favorite">Favoritos</string>
     <string name="price_label">Preço</string>
     <string name="battery_label">Bateria</string>
     <string name="potency_label">Potência</string>
