@@ -4,4 +4,7 @@
     <string name="battery_label">Bateria</string>
     <string name="potency_label">Potência</string>
     <string name="recharge_label">Recarga</string>
+    <string name="app_title_form">Calcular Autonomia</string>
+    <string name="km_percorrido">Km percorrido</string>
+    <string name="kwh">Kwh</string>
 </resources>

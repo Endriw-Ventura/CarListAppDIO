@@ -8,4 +8,9 @@
     <string name="battery_label">Battery</string>
     <string name="potency_label">Potency</string>
     <string name="recharge_label">Recharge</string>
+    <string name="app_title_form">Calculate Autonomy</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="km_percorrido">Km</string>
+    <string name="kwh">Price Kwh</string>
+    <string name="result">Result</string>
 </resources>
