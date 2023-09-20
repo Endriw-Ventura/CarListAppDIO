@@ -69,6 +69,7 @@
         android:textStyle="bold"
         android:visibility="invisible"
         tools:visibility="visible"
-        tools:text="VAR_RESULT R$ VAR_PRICE"/>
+        tools:text="Resultado R$ 150.000,00"
+        android:text="VAR_RESULT R$ VAR_PRICE"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

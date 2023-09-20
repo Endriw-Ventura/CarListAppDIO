@@ -42,120 +42,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cars_list"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv_tab_title_cars"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tab_title_cars"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cardBackgroundColor="@color/gray"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="16dp">
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/car_item"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp">
 
-        <ImageView
-            android:id="@+id/iv_car_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_background"
-            android:layout_margin="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/app_title" />
 
-        <TextView
-            android:id="@+id/tv_price_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="100dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_margin="16dp"
-            android:text="@string/price_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_car_image"/>
-
-        <TextView
-            android:id="@+id/tv_price_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_margin="16dp"
-            tools:text="R$ 120.000,00"
-            app:layout_constraintStart_toEndOf="@id/tv_price_label"
-            app:layout_constraintTop_toBottomOf="@id/iv_car_image"/>
-
-        <TextView
-            android:id="@+id/tv_battery_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="100dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_margin="16dp"
-            android:text="@string/battery_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_price_label"/>
-
-        <TextView
-            android:id="@+id/tv_battery_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_margin="16dp"
-            tools:text="39,4 Kwh"
-            app:layout_constraintStart_toEndOf="@id/tv_battery_label"
-            app:layout_constraintTop_toBottomOf="@id/tv_price_value"/>
-
-        <TextView
-            android:id="@+id/tv_potency_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="100dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_margin="16dp"
-            android:text="@string/potency_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_battery_label"/>
-
-        <TextView
-            android:id="@+id/tv_potency_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_margin="16dp"
-            tools:text="646 cv"
-            app:layout_constraintStart_toEndOf="@id/tv_potency_label"
-            app:layout_constraintTop_toBottomOf="@id/tv_battery_value"/>
-
-        <TextView
-            android:id="@+id/tv_recharge_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="100dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_margin="16dp"
-            android:text="@string/recharge_label"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_potency_label"/>
-
-        <TextView
-            android:id="@+id/tv_recharge_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_margin="16dp"
-            tools:text="23 min"
-            app:layout_constraintStart_toEndOf="@id/tv_recharge_label"
-            app:layout_constraintTop_toBottomOf="@id/tv_potency_value"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

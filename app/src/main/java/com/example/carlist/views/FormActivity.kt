@@ -1,6 +1,5 @@
 package com.example.carlist.views
 
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,10 +9,11 @@ import android.widget.TextView
 import com.example.carlist.R
 
 class FormActivity : AppCompatActivity() {
-    lateinit var kwh_field : EditText
-    lateinit var km_field : EditText
-    lateinit var btn_calculate : Button
-    lateinit var result_field: TextView
+    private lateinit var kwh_field : EditText
+    private lateinit var km_field : EditText
+    private lateinit var btn_calculate : Button
+    private lateinit var result_field: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_acitivity)
