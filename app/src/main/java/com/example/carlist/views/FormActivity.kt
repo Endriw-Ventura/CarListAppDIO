@@ -16,7 +16,7 @@ class FormActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_form_acitivity)
+        setContentView(R.layout.activity_form)
         setViews()
         setListeners()
     }
@@ -32,7 +32,7 @@ class FormActivity : AppCompatActivity() {
     }
 
     private fun formatNumber(result: String): String {
-        return result_field.text.toString().replace("VAR_RESULT", R.string.result.toString()).replace("VAR_PRICE", result)
+        return result_field.text.toString().replace("VAR_RESULT", this.getString(R.string.result)).replace("VAR_PRICE", result)
     }
 
     private fun getValues() : Float {

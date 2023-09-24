@@ -5,7 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.example.carlist.R
 import com.example.carlist.models.CarItem
 
@@ -36,10 +38,12 @@ class CarAdapter(private val carsList: MutableList<CarItem>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
         holder.apply {
-            price.text = carsList[position].price.toString()
-            battery.text = carsList[position].battery.toString()
-            potency.text = carsList[position].potency.toString()
-            recharge.text = carsList[position].recharge.toString()
+            price.text = carsList[position].price
+            battery.text = carsList[position].battery
+            potency.text = carsList[position].potency
+            recharge.text = carsList[position].recharge
+
+            carImage.load(carsList[position].carImage)
         }
     }
 

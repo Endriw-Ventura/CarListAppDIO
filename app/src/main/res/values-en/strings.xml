@@ -3,7 +3,7 @@
     <string name="app_name">CarList</string>
     <string name="app_title">Electric Car</string>
     <string name="tab_title_car">Cars</string>
-    <string name="tab_title_favorite">Favourites</string>
+    <string name="tab_title_favorite">Favorites</string>
     <string name="price_label">Price</string>
     <string name="battery_label">Battery</string>
     <string name="potency_label">Potency</string>
